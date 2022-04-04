@@ -1,3 +1,4 @@
+from fileinput import filename
 from PIL import Image
 import glob
 
@@ -27,7 +28,10 @@ for x in glob.iglob(path):
     ok = (ans, x)
     list_1.append(ok)
     print ("Matches: ", ans,"%")
-    print("----------------------------------------------------")
-print(max(list_1)[0])
-print(max(list_1)[1])
-# print(type(max(list_1)))
+Matches = max(list_1)[0]
+Per = max(list_1)[1]
+person = (Per.rsplit('/',1)[1])
+person2 = (person.rsplit('.',1)[0])
+print("----------------------------------------------------")
+print(f'Patient Name : {person2}     Matches : {Matches}%')
+print("----------------------------------------------------")
