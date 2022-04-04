@@ -28,4 +28,6 @@ for x in glob.iglob(path):
     list_1.append(ok)
     print ("Matches: ", ans,"%")
     print("----------------------------------------------------")
-print(max(list_1))
+print(max(list_1)[0])
+print(max(list_1)[1])
+# print(type(max(list_1)))
