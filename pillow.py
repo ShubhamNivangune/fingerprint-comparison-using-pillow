@@ -22,6 +22,10 @@ for x in glob.iglob(path):
     ncomponents = i1.size[0] * i1.size[1] * 3
     diff =(dif / 255.0 * 100) / ncomponents
     g = 100 - diff
-    # print ("Difference :", diff)
+    print ("File :", x)
     ans = float("{:.2f}".format(g))
+    ok = (ans, x)
+    list_1.append(ok)
     print ("Matches: ", ans,"%")
+    print("----------------------------------------------------")
+print(max(list_1))
