@@ -2,9 +2,9 @@ from fileinput import filename
 from PIL import Image
 import glob
 
-i1 = Image.open("tif/101_2.tif")
+i1 = Image.open("101_2_1.jpg")
 
-path = "tif/*"
+path = "jpg/*"
 # dir_list = os.listdir(path)
 list_1=[]
 # for x in os.listdir(path):
@@ -28,6 +28,7 @@ for x in glob.iglob(path):
     ok = (ans, x)
     list_1.append(ok)
     print ("Matches: ", ans,"%")
+
 Matches = max(list_1)[0]
 Per = max(list_1)[1]
 person = (Per.rsplit('/',1)[1])
