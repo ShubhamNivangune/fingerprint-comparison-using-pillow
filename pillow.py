@@ -1,9 +1,9 @@
 from PIL import Image
 import glob
 
-i1 = Image.open("datasets/101_2_1.jpg")
+i1 = Image.open("tif/101_2.tif")
 
-path = "datasets/*"
+path = "tif/*"
 # dir_list = os.listdir(path)
 list_1=[]
 # for x in os.listdir(path):
